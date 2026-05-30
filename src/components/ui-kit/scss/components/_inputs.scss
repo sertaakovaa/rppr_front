@@ -1,0 +1,42 @@
+.input-group {
+    position: relative;
+    margin-bottom: $spacing-md;
+
+    .input {
+        width: 100%;
+        padding: $spacing-sm;
+        font-size: $font-size-base;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+
+        &:focus {
+            outline: none;
+            border-color: $primary-color;
+            box-shadow: 0 0 0 2px rgba($primary-color, 0.2);
+        }
+    }
+
+    &--error {
+        .input {
+            border-color: $danger-color;
+        }
+
+        .input-group__error-message {
+            color: $danger-color;
+            font-size: 0.8rem;
+            margin-top: $spacing-sm / 2;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        top: 50%;
+        left: $spacing-sm;
+        transform: translateY(-50%);
+        color: #aaa;
+    }
+
+    .input-group__icon + .input {
+        padding-left: $spacing-lg;
+    }
+}

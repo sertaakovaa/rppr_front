@@ -1,0 +1,38 @@
+.card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    &__image {
+        width: 100%;
+        height: auto;
+    }
+
+    &__content {
+        padding: $spacing-md;
+    }
+
+    &__title {
+        font-size: 1.25rem;
+        margin-bottom: $spacing-sm;
+    }
+
+    &__text {
+        font-size: $font-size-base;
+    }
+
+    &--small {
+        width: 200px;
+    }
+
+    &--medium {
+        width: 300px;
+    }
+
+    &--large {
+        width: 400px;
+    }
+}

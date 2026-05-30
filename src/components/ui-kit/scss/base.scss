@@ -1,0 +1,45 @@
+/* A simple reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-family-base;
+    font-size: $font-size-base;
+    line-height: 1.5;
+    background-color: $light-color;
+    color: $dark-color;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 $spacing-md;
+}
+
+.grid {
+    display: grid;
+    grid-gap: $spacing-md;
+}
+
+/* Example for a 3-column grid */
+.grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+main {
+    padding: $spacing-lg 0;
+}
+
+.component {
+    margin-bottom: $spacing-lg;
+    background: #fff;
+    padding: $spacing-lg;
+    border-radius: 8px;
+}
+
+.component__example {
+    margin-top: $spacing-md;
+}

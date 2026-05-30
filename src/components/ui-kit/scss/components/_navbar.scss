@@ -1,0 +1,72 @@
+.navbar {
+    background-color: $dark-color;
+    color: white;
+    padding: $spacing-md 0;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 $spacing-md;
+    }
+
+    &__brand {
+        color: white;
+        text-decoration: none;
+        font-size: 1.5rem;
+    }
+
+    &__menu {
+        display: flex;
+    }
+
+    &__item {
+        color: white;
+        text-decoration: none;
+        margin-left: $spacing-md;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__toggle {
+        display: none;
+        cursor: pointer;
+
+        span {
+            display: block;
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            margin: 5px 0;
+        }
+    }
+
+    @media (max-width: 768px) {
+        &__menu {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            position: absolute;
+            top: 60px;
+            left: 0;
+            background-color: $dark-color;
+            padding: $spacing-md 0;
+
+            &.active {
+                display: flex;
+            }
+        }
+
+        &__item {
+            margin: $spacing-sm $spacing-md;
+        }
+
+        &__toggle {
+            display: block;
+        }
+    }
+}

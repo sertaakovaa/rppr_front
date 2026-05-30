@@ -1,0 +1,10 @@
+.form-group {
+    margin-bottom: $spacing-sm;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox,
+.radio {
+    margin-right: $spacing-sm / 2;
+}
